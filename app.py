@@ -82,7 +82,6 @@ def ask_question():
     # Check if the query is a request for file summary
     file_summary_request = "summary of the file" if "summary" in query.lower() else ""
 
-    # Construct the appropriate prompt based on the query or summary request
     wealth_manager_prompt = """
     You are a highly experienced wealth manager providing personalized financial advice.
     The user you're interacting with is {username}. They have provided a file and a question for you to assist with.
